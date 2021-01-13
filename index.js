@@ -1,0 +1,1 @@
+export { default as pow } from './src/pow';
