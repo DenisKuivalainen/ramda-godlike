@@ -6,7 +6,7 @@ const { curry } = require('ramda');
  * @name pow
  * @since v0.0.2
  * @category Math
- * @sig Number -> Number -> Number
+ * @summary Number -> Number -> Number
  * @param {Number} a
  * @param {Number} b
  * @return {Number}

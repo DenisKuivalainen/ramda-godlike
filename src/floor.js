@@ -4,7 +4,7 @@
  * @name floor
  * @since v0.0.6
  * @category Math
- * @sig Number -> Number
+ * @summary Number -> Number
  * @param {Number} a
  * @return {Number}
  * @example
