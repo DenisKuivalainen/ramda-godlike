@@ -9,7 +9,7 @@ const { addIndex, map } = require('ramda');
  *
  * @name mapIndexed
  * @since v0.0.6
- * @memberof List
+ * @module List
  * @description Functor f => (a -> b -> c) -> f a -> f c
  * @param {Function} fn The function to be called on every element of the input `list`.
  * @param {Array} list The list to be iterated over.

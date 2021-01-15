@@ -6,7 +6,7 @@ const { is } = require('ramda');
  *
  * @name isNumber
  * @since v0.0.6
- * @memberof Type
+ * @module Type
  * @description * -> Boolean
  * @param {*} x The value to test.
  * @return {Boolean} `true` if `x` is `Number`, otherwise `false`.

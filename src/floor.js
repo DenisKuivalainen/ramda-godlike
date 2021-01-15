@@ -3,7 +3,7 @@
  *
  * @name floor
  * @since v0.0.6
- * @memberof Math
+ * @module Math
  * @description Number -> Number
  * @param {Number} a
  * @return {Number}
