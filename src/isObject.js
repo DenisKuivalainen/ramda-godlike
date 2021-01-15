@@ -6,8 +6,8 @@ const { is } = require('ramda');
  *
  * @name isObject
  * @since v0.0.6
- * @category Type
- * @summary * -> Boolean
+ * @memberof Type
+ * @description * -> Boolean
  * @param {*} x The value to test.
  * @return {Boolean} `true` if `x` is `Object`, otherwise `false`.
  * @example

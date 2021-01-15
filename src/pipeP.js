@@ -7,8 +7,8 @@ const { curry } = require('ramda');
  *
  * @name pipeP
  * @since v0.0.6
- * @category Function
- * @summary (Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)
+ * @memberof Function
+ * @description (Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)
  * @param {Function} err Error handler
  * @param {...Function} fns Functions to compose
  * @return {Function}

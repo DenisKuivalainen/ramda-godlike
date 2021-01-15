@@ -7,8 +7,8 @@ const { curry } = require('ramda');
  *
  * @name composeP
  * @since v0.0.6
- * @category Function
- * @summary (Error -> *) -> ((y -> Promise z), (x -> Promise y), ..., (a -> Promise b)) -> (a -> Promise z)
+ * @memberof Function
+ * @description (Error -> *) -> ((y -> Promise z), (x -> Promise y), ..., (a -> Promise b)) -> (a -> Promise z)
  * @param {Function} err Error handler
  * @param {...Function} fns Functions to compose
  * @return {Function}
