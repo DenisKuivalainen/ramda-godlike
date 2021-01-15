@@ -5,18 +5,19 @@ const { curry } = require('ramda');
  * functions. First argument is an error handler. The first argument may have any arity; the remaining
  * arguments must be unary.
  *
+ * @name pipeP
  * @since v0.0.6
  * @category Function
  * @sig (Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)
- * @param {Function} err Error 
+ * @param {Function} err Error handler
  * @param {...Function} fns Functions to compose
  * @return {Function}
  * @example
  *
- *      //  Some promise returning function
- *      //  promised :: a -> Promise b
+ * //  Some promise returning function
+ * //  promised :: a -> Promise b
  *
- *      composeP(console.log, promised, promised)(3);
+ * composeP(console.log, promised, promised)(3);
  */
 
 const pipeP = (err, ...fns) => curry(async (...args) => {

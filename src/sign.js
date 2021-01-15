@@ -4,6 +4,7 @@
  * is 0, it will return a +/- 0. Note that if the number is positive,
  * an explicit (+) will not be returned.
  *
+ * @name sign
  * @since v0.0.6
  * @category Math
  * @sig Number -> Number
@@ -11,9 +12,9 @@
  * @return {Number}
  * @example
  *
- *      sign(2) // => 1
- *      sign(-3) // => -1
- *      sign(0) // => 0
+ * sign(2) // => 1
+ * sign(-3) // => -1
+ * sign(0) // => 0
  */
 
 const sign = (a) => Math.sign(Number(a));

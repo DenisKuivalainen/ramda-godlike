@@ -2,8 +2,9 @@ const { is } = require('ramda');
 
 /**
  * Checks if the input value is Number.
- * More info at Ramda [is](https://github.com/ramda/ramda/blob/v0.27.0/source/is.js).
+ * More info at Ramda {@link https://github.com/ramda/ramda/blob/v0.27.0/source/is.js is}.
  *
+ * @name isString
  * @since v0.0.6
  * @category Type
  * @sig * -> Boolean
@@ -11,9 +12,9 @@ const { is } = require('ramda');
  * @return {Boolean} `true` if `x` is `String`, otherwise `false`.
  * @example
  *
- *      isString('lol') //=> true
- *      isString(5) //=> false
- *      isString({}) //=> false
+ * isString('lol') //=> true
+ * isString(5) //=> false
+ * isString({}) //=> false
  */
 
 const isString = is(String);

@@ -1,6 +1,7 @@
 /**
  * Returns the absolute value of a number.
  *
+ * @name abs
  * @since v0.0.6
  * @category Math
  * @sig Number -> Number
@@ -8,8 +9,8 @@
  * @return {Number}
  * @example
  *
- *      abs(45.95) // => 45.95
- *      abs(-45.95) // => 45.95
+ * abs(45.95) // => 45.95
+ * abs(-45.95) // => 45.95
  */
 
 const abs = (a) => Math.abs(Number(a));
