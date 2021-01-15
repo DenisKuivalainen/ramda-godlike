@@ -1,10 +1,16 @@
 {
-    "name": "@kuivalainen/ramda-godlike",
-    "version": "0.0.2",
+    "name": "ramda-godlike",
+    "version": "0.0.6",
     "description": "Small personal library extending Ramda methods",
     "license": "MIT",
     "repository": "DenisKuivalainen/ramda-godlike",
     "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "watch": "jest --watch",
+        "coverage": "jest --coverage",
+        "build": "jsdoc ./src"
+    },
     "keywords": [
         "godlike",
         "npm",
@@ -14,6 +20,7 @@
     ],
     "dependencies": {
         "jest": "^26.6.3",
+        "jsdoc": "^3.6.6",
         "node": "^15.4.0",
         "ramda": "^0.27.1"
     }

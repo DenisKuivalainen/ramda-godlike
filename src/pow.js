@@ -1,11 +1,9 @@
-import curry from 'ramda';
+const { curry } = require('ramda');
 
 /**
  * Raises the first number to the power of the second number.
  *
- * @func
- * @memberOf RGod
- * @since v0.1.0
+ * @since v0.0.2
  * @category Math
  * @sig Number -> Number -> Number
  * @param {Number} a
@@ -13,10 +11,10 @@ import curry from 'ramda';
  * @return {Number}
  * @example
  *
- *      RGod.pow(2, 3) // => 8
- *      RGod.pow(5)(2) // => 25
+ *      pow(2, 3) // => 8
+ *      pow(5)(2) // => 25
  */
 
-const pow = curry((x, y) => Math.pow(Number(x), Number(y)));
+const pow = curry((a, b) => Math.pow(Number(a), Number(b)));
 
-export default pow;
+module.exports = pow;
