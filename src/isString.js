@@ -1,13 +1,12 @@
 var { is } = require('ramda');
 
 /**
+ * * → Boolean
+ * 
  * Checks if the input value is Number.
  * More info at Ramda {@link https://github.com/ramda/ramda/blob/v0.27.0/source/is.js is}.
  *
- * @name isString
  * @since v0.0.6
- * @module Type
- * @description * -> Boolean
  * @param {*} x The value to test.
  * @return {Boolean} `true` if `x` is `String`, otherwise `false`.
  * @example
@@ -16,7 +15,6 @@ var { is } = require('ramda');
  * isString(5) //=> false
  * isString({}) //=> false
  */
-
-var isString = is(String);
+const isString = is(String);
 
 module.exports = isString;

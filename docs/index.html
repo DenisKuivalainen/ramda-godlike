@@ -29,9 +29,9 @@
               
                 
                 <li><a
-                  href='#math'
+                  href='#abs'
                   class="">
-                  Math
+                  abs
                   
                 </a>
                 
@@ -39,59 +39,9 @@
               
                 
                 <li><a
-                  href='#math'
+                  href='#ceil'
                   class="">
-                  Math
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#math'
-                  class="">
-                  Math
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#math'
-                  class="">
-                  Math
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#math'
-                  class="">
-                  Math
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#math'
-                  class="">
-                  Math
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#math'
-                  class="">
-                  Math
+                  ceil
                   
                 </a>
                 
@@ -109,9 +59,9 @@
               
                 
                 <li><a
-                  href='#type'
+                  href='#floor'
                   class="">
-                  Type
+                  floor
                   
                 </a>
                 
@@ -119,9 +69,9 @@
               
                 
                 <li><a
-                  href='#type'
+                  href='#isnumber'
                   class="">
-                  Type
+                  isNumber
                   
                 </a>
                 
@@ -129,9 +79,9 @@
               
                 
                 <li><a
-                  href='#type'
+                  href='#isobject'
                   class="">
-                  Type
+                  isObject
                   
                 </a>
                 
@@ -139,9 +89,19 @@
               
                 
                 <li><a
-                  href='#list'
+                  href='#isstring'
                   class="">
-                  List
+                  isString
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mapindexed'
+                  class="">
+                  mapIndexed
                   
                 </a>
                 
@@ -152,6 +112,46 @@
                   href='#pipep'
                   class="">
                   pipeP
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pow'
+                  class="">
+                  pow
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#math'
+                  class="">
+                  Math
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sign'
+                  class="">
+                  sign
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#trunc'
+                  class="">
+                  trunc
                   
                 </a>
                 
@@ -172,12 +172,12 @@
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='math'>
-      Math
+    <h3 class='fl m0' id='abs'>
+      abs
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/abs.js#L16-L16'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/abs.js#L14-L14'>
       <span>src/abs.js</span>
       </a>
     
@@ -185,8 +185,9 @@
   
 
   <p>Number -> Number</p>
+<p>Returns the absolute value of a number.</p>
 
-    <div class='pre p1 fill-light mt0'>Math</div>
+    <div class='pre p1 fill-light mt0'>abs</div>
   
   
 
@@ -218,7 +219,7 @@
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
+        The absolute value of a number
 
       
     
@@ -254,21 +255,22 @@ abs(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt;
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='math'>
-      Math
+    <h3 class='fl m0' id='ceil'>
+      ceil
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/ceil.js#L16-L16'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/ceil.js#L14-L14'>
       <span>src/ceil.js</span>
       </a>
     
   </div>
   
 
-  <p>Number -> Number</p>
+  <p>Number → Number</p>
+<p>Returns the smalest integer greater than or equal to a given number.</p>
 
-    <div class='pre p1 fill-light mt0'>Math</div>
+    <div class='pre p1 fill-light mt0'>ceil</div>
   
   
 
@@ -286,7 +288,8 @@ abs(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt;
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
+	    Number to round
+
           </div>
           
         </div>
@@ -300,7 +303,7 @@ abs(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt;
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
+        Rounded number
 
       
     
@@ -336,438 +339,19 @@ ceil(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='math'>
-      Math
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/floor.js#L16-L16'>
-      <span>src/floor.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Number -> Number</p>
-
-    <div class='pre p1 fill-light mt0'>Math</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.6</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'>floor(<span class="hljs-number">45.95</span>) <span class="hljs-comment">// =&gt; 45</span>
-floor(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt; -46</span></pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='math'>
-      Math
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/pow.js#L19-L19'>
-      <span>src/pow.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Number -> Number -> Number</p>
-
-    <div class='pre p1 fill-light mt0'>Math</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.2</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>b</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'>pow(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// =&gt; 8</span>
-pow(<span class="hljs-number">5</span>)(<span class="hljs-number">2</span>) <span class="hljs-comment">// =&gt; 25</span></pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='math'>
-      Math
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/round.js#L16-L16'>
-      <span>src/round.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Number -> Number</p>
-
-    <div class='pre p1 fill-light mt0'>Math</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.6</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'>round(<span class="hljs-number">45.95</span>) <span class="hljs-comment">// =&gt; 46</span>
-round(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt; -46</span></pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='math'>
-      Math
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/sign.js#L20-L20'>
-      <span>src/sign.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Number -> Number</p>
-
-    <div class='pre p1 fill-light mt0'>Math</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.6</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'>sign(<span class="hljs-number">2</span>) <span class="hljs-comment">// =&gt; 1</span>
-sign(<span class="hljs-number">-3</span>) <span class="hljs-comment">// =&gt; -1</span>
-sign(<span class="hljs-number">0</span>) <span class="hljs-comment">// =&gt; 0</span></pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='math'>
-      Math
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/trunc.js#L16-L16'>
-      <span>src/trunc.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Number -> Number</p>
-
-    <div class='pre p1 fill-light mt0'>Math</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.6</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'>trunk(<span class="hljs-number">45.95</span>) <span class="hljs-comment">// =&gt; 45</span>
-trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt; -45</span></pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
     <h3 class='fl m0' id='composep'>
       composeP
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/composeP.js#L21-L28'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/composeP.js#L22-L29'>
       <span>src/composeP.js</span>
       </a>
     
   </div>
   
 
-  <p>(Error -> *) -> ((y -> Promise z), (x -> Promise y), ..., (a -> Promise b)) -> (a -> Promise z)</p>
+  <p>(Error → *) → ((y → Promise z), (x → Promise y), ..., (a → Promise b)) → (a → Promise z)</p>
 <p>Performs rigth-to-left composition of one or more Promise-returning
 functions. The first argument may have any arity; the remaining
 arguments must be unary.</p>
@@ -805,7 +389,7 @@ arguments must be unary.</p>
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>:
-        
+        Functions composition
 
       
     
@@ -819,10 +403,11 @@ arguments must be unary.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning function</span>
-<span class="hljs-comment">//  promised :: a -&gt; Promise b</span>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning functions</span>
+<span class="hljs-comment">//  promisedOne :: a → Promise b</span>
+<span class="hljs-comment">//  promisedTwo :: a → Promise b</span>
 
-composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<span class="hljs-number">3</span>);</pre>
+composeP(promisedOne, promisedTwo); <span class="hljs-comment">// =&gt; promisedTwo(__).then(res =&gt; promiseOne(res))</span></pre>
     
   
 
@@ -843,12 +428,96 @@ composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<sp
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='type'>
-      Type
+    <h3 class='fl m0' id='floor'>
+      floor
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/isNumber.js#L20-L20'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/floor.js#L14-L14'>
+      <span>src/floor.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Number → Number</p>
+<p>Returns the largest integer less than or equal to a given number.</p>
+
+    <div class='pre p1 fill-light mt0'>floor</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.6</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    Number to round
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        Rounded number
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>floor(<span class="hljs-number">45.95</span>) <span class="hljs-comment">// =&gt; 45</span>
+floor(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt; -46</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isnumber'>
+      isNumber
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/isNumber.js#L18-L18'>
       <span>src/isNumber.js</span>
       </a>
     
@@ -858,8 +527,10 @@ composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<sp
   <ul>
 <li>-> Boolean</li>
 </ul>
+<p>Checks if the input value is Number.
+More info at Ramda <a href="https://github.com/ramda/ramda/blob/v0.27.0/source/is.js">is</a>.</p>
 
-    <div class='pre p1 fill-light mt0'>Type</div>
+    <div class='pre p1 fill-light mt0'>isNumber</div>
   
   
 
@@ -936,12 +607,12 @@ isNumber({}) <span class="hljs-comment">//=&gt; false</span></pre>
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='type'>
-      Type
+    <h3 class='fl m0' id='isobject'>
+      isObject
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/isObject.js#L20-L20'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/isObject.js#L18-L18'>
       <span>src/isObject.js</span>
       </a>
     
@@ -949,10 +620,12 @@ isNumber({}) <span class="hljs-comment">//=&gt; false</span></pre>
   
 
   <ul>
-<li>-> Boolean</li>
+<li>→ Boolean</li>
 </ul>
+<p>Checks if the input value is Number.
+More info at Ramda <a href="https://github.com/ramda/ramda/blob/v0.27.0/source/is.js">is</a>.</p>
 
-    <div class='pre p1 fill-light mt0'>Type</div>
+    <div class='pre p1 fill-light mt0'>isObject</div>
   
   
 
@@ -1029,12 +702,12 @@ isObject(<span class="hljs-number">5</span>) <span class="hljs-comment">//=&gt; 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='type'>
-      Type
+    <h3 class='fl m0' id='isstring'>
+      isString
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/isString.js#L20-L20'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/isString.js#L18-L18'>
       <span>src/isString.js</span>
       </a>
     
@@ -1042,10 +715,12 @@ isObject(<span class="hljs-number">5</span>) <span class="hljs-comment">//=&gt; 
   
 
   <ul>
-<li>-> Boolean</li>
+<li>→ Boolean</li>
 </ul>
+<p>Checks if the input value is Number.
+More info at Ramda <a href="https://github.com/ramda/ramda/blob/v0.27.0/source/is.js">is</a>.</p>
 
-    <div class='pre p1 fill-light mt0'>Type</div>
+    <div class='pre p1 fill-light mt0'>isString</div>
   
   
 
@@ -1122,12 +797,12 @@ isString({}) <span class="hljs-comment">//=&gt; false</span></pre>
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='list'>
-      List
+    <h3 class='fl m0' id='mapindexed'>
+      mapIndexed
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/mapIndexed.js#L23-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/mapIndexed.js#L21-L21'>
       <span>src/mapIndexed.js</span>
       </a>
     
@@ -1135,8 +810,12 @@ isString({}) <span class="hljs-comment">//=&gt; false</span></pre>
   
 
   <p>Functor f => (a -> b -> c) -> f a -> f c</p>
+<p>Takes a function and
+a functor, applies the function to each of the functor's values,
+and returns a functor of the same shape.</p>
+<p>More info at Ramda <a href="https://github.com/ramda/ramda/blob/v0.27.0/source/map.js">map</a> and <a href="https://github.com/ramda/ramda/blob/v0.27.0/source/addIndex.js">addIndex</a>.</p>
 
-    <div class='pre p1 fill-light mt0'>List</div>
+    <div class='pre p1 fill-light mt0'>mapIndexed</div>
   
   
 
@@ -1221,14 +900,14 @@ isString({}) <span class="hljs-comment">//=&gt; false</span></pre>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/d1a521056aa950cbaef48e484846fa39a74931ea/src/pipeP.js#L21-L28'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/pipeP.js#L22-L29'>
       <span>src/pipeP.js</span>
       </a>
     
   </div>
   
 
-  <p>(Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)</p>
+  <p>(Error → *) → ((a → Promise b), (b → Promise c), …, (y → Promise z)) → (a → Promise z)</p>
 <p>Performs left-to-right composition of one or more Promise-returning
 functions. First argument is an error handler. The first argument may have any arity; the remaining
 arguments must be unary.</p>
@@ -1266,6 +945,184 @@ arguments must be unary.</p>
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>:
+        Functions composition
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning functions</span>
+<span class="hljs-comment">//  promisedOne :: a → Promise b</span>
+<span class="hljs-comment">//  promisedTwo :: a → Promise b</span>
+
+pipeP(promisedOne, promisedTwo); <span class="hljs-comment">// =&gt; promisedOne(__).then(res =&gt; promiseTwo(res))</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pow'>
+      pow
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/pow.js#L17-L17'>
+      <span>src/pow.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Number → Number → Number</p>
+<p>Raises the first number to the power of the second number.</p>
+
+    <div class='pre p1 fill-light mt0'>pow</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.2</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    A number to be powered
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>b</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    The power
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        Result of the exponentiation
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>pow(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// =&gt; 8</span>
+pow(<span class="hljs-number">5</span>)(<span class="hljs-number">2</span>) <span class="hljs-comment">// =&gt; 25</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='math'>
+      Math
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/round.js#L16-L16'>
+      <span>src/round.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Number → Number</p>
+
+    <div class='pre p1 fill-light mt0'>Math</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.6</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
         
 
       
@@ -1280,10 +1137,178 @@ arguments must be unary.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning function</span>
-<span class="hljs-comment">//  promised :: a -&gt; Promise b</span>
+      <pre class='p1 overflow-auto round fill-light'>round(<span class="hljs-number">45.95</span>) <span class="hljs-comment">// =&gt; 46</span>
+round(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt; -46</span></pre>
+    
+  
 
-composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<span class="hljs-number">3</span>);</pre>
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sign'>
+      sign
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/sign.js#L18-L18'>
+      <span>src/sign.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Number → Number</p>
+<p>Returns either a positive or negative +/- 1, indicating the sign of
+a number passed into the argument. If the number passed into Math.sign()
+is 0, it will return a +/- 0. Note that if the number is positive,
+an explicit (+) will not be returned.</p>
+
+    <div class='pre p1 fill-light mt0'>sign</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.6</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        Indicator of a number sign
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>sign(<span class="hljs-number">2</span>) <span class="hljs-comment">// =&gt; 1</span>
+sign(<span class="hljs-number">-3</span>) <span class="hljs-comment">// =&gt; -1</span>
+sign(<span class="hljs-number">0</span>) <span class="hljs-comment">// =&gt; 0</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='trunc'>
+      trunc
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/1c6d11d9a65309346b123bb929224893616e82b7/src/trunc.js#L14-L14'>
+      <span>src/trunc.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Number → Number</p>
+<p>Returns the integer part of a number by removing any fractional digits.</p>
+
+    <div class='pre p1 fill-light mt0'>trunc</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.6</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>trunk(<span class="hljs-number">45.95</span>) <span class="hljs-comment">// =&gt; 45</span>
+trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt; -45</span></pre>
     
   
 
