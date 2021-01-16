@@ -1,4 +1,4 @@
-const { addIndex, map } = require('ramda');
+var { addIndex, map } = require('ramda');
 
 /**
  * Takes a function and
@@ -20,6 +20,6 @@ const { addIndex, map } = require('ramda');
  * //=> ['0-f', '1-o', '2-o', '3-b', '4-a', '5-r']
  */
 
-const mapIndexed = addIndex(map);
+var mapIndexed = addIndex(map);
 
 module.exports = mapIndexed;

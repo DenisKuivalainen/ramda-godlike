@@ -13,6 +13,6 @@
  * abs(-45.95) // => 45.95
  */
 
-const abs = (a) => Math.abs(Number(a));
+var abs = (a) => Math.abs(Number(a));
 
 module.exports = abs;

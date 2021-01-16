@@ -1,4 +1,4 @@
-const { curry } = require('ramda');
+var { curry } = require('ramda');
 
 /**
  * Performs left-to-right composition of one or more Promise-returning
@@ -12,6 +12,7 @@ const { curry } = require('ramda');
  * @param {Function} err Error handler
  * @param {...Function} fns Functions to compose
  * @return {Function}
+ * @async
  * @example
  *
  * //  Some promise returning function
@@ -20,7 +21,7 @@ const { curry } = require('ramda');
  * composeP(console.log, promised, promised)(3);
  */
 
-const pipeP = (err, ...fns) => curry(async (...args) => {
+var pipeP = (err, ...fns) => curry(async (...args) => {
     return await fns.slice(1).reduce(
         (promise, fn) => promise.then(
             res => Promise.resolve(fn(res))

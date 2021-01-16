@@ -1,4 +1,4 @@
-const { curry } = require('ramda');
+var { curry } = require('ramda');
 
 /**
  * Raises the first number to the power of the second number.
@@ -16,6 +16,6 @@ const { curry } = require('ramda');
  * pow(5)(2) // => 25
  */
 
-const pow = curry((a, b) => Math.pow(Number(a), Number(b)));
+var pow = curry((a, b) => Math.pow(Number(a), Number(b)));
 
 module.exports = pow;

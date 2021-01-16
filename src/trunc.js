@@ -13,6 +13,6 @@
  * trunk(-45.95) // => -45
  */
 
-const trunc = (a) => Math.trunc(Number(a));
+var trunc = (a) => Math.trunc(Number(a));
 
 module.exports = trunc;

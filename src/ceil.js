@@ -13,6 +13,6 @@
  * ceil(-45.95) // => -45
  */
 
-const ceil = (a) => Math.ceil(Number(a));
+var ceil = (a) => Math.ceil(Number(a));
 
 module.exports = ceil;

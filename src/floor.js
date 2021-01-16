@@ -13,6 +13,6 @@
  * floor(-45.95) // => -46
  */
 
-const floor = (a) => Math.floor(Number(a));
+var floor = (a) => Math.floor(Number(a));
 
 module.exports = floor;

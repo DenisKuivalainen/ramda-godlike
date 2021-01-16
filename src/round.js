@@ -13,6 +13,6 @@
  * round(-45.95) // => -46
  */
 
-const round = (a) => Math.round(Number(a));
+var round = (a) => Math.round(Number(a));
 
 module.exports = round;

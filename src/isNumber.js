@@ -1,4 +1,4 @@
-const { is } = require('ramda');
+var { is } = require('ramda');
 
 /**
  * Checks if the input value is Number.
@@ -17,6 +17,6 @@ const { is } = require('ramda');
  * isNumber({}) //=> false
  */
 
-const isNumber = is(Number);
+var isNumber = is(Number);
 
 module.exports = isNumber;

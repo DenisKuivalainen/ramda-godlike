@@ -17,6 +17,6 @@
  * sign(0) // => 0
  */
 
-const sign = (a) => Math.sign(Number(a));
+var sign = (a) => Math.sign(Number(a));
 
 module.exports = sign;
