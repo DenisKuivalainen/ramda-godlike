@@ -1,15 +1,14 @@
 var { curry } = require('ramda');
 
 /**
+ * (Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)
+ * 
  * Performs left-to-right composition of one or more Promise-returning
  * functions. First argument is an error handler. The first argument may have any arity; the remaining
  * arguments must be unary.
  *
- * @name pipeP
  * @since v0.0.6
- * @module Function
- * @description (Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)
- * @param {Function} err Error handler
+ * @class Function
  * @param {...Function} fns Functions to compose
  * @return {Function}
  * @async
@@ -20,7 +19,6 @@ var { curry } = require('ramda');
  *
  * composeP(console.log, promised, promised)(3);
  */
-
 var pipeP = (...fns) => curry(async(...args) => {
     return fns.slice(1).reduce(
         (promise, fn) => promise.then(

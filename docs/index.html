@@ -99,9 +99,19 @@
               
                 
                 <li><a
-                  href='#composep'
+                  href='#function'
                   class="">
-                  composeP
+                  Function
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#function'
+                  class="">
+                  Function
                   
                 </a>
                 
@@ -142,16 +152,6 @@
                   href='#list'
                   class="">
                   List
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#function'
-                  class="">
-                  Function
                   
                 </a>
                 
@@ -727,8 +727,8 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='composep'>
-      composeP
+    <h3 class='fl m0' id='function'>
+      Function
     </h3>
     
     
@@ -740,7 +740,91 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
 functions. The first argument may have any arity; the remaining
 arguments must be unary.</p>
 
-    <div class='pre p1 fill-light mt0'>composeP(fns: ...<a href="#function">Function</a>): <a href="#function">Function</a></div>
+    <div class='pre p1 fill-light mt0'>new Function(fns: ...<a href="#function">Function</a>): <a href="#function">Function</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.6</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fns</span> <code class='quiet'>(...<a href="#function">Function</a>)</code>
+	    Functions to compose
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#function">Function</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning function</span>
+<span class="hljs-comment">//  promised :: a -&gt; Promise b</span>
+
+composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<span class="hljs-number">3</span>);</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='function'>
+      Function
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>(Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)</p>
+<p>Performs left-to-right composition of one or more Promise-returning
+functions. First argument is an error handler. The first argument may have any arity; the remaining
+arguments must be unary.</p>
+
+    <div class='pre p1 fill-light mt0'>new Function(fns: ...<a href="#function">Function</a>): <a href="#function">Function</a></div>
   
   
 
@@ -1148,96 +1232,6 @@ isString({}) <span class="hljs-comment">//=&gt; false</span></pre>
       
       <pre class='p1 overflow-auto round fill-light'>mapIndexed(<span class="hljs-function">(<span class="hljs-params">val, idx</span>) =&gt;</span> idx + <span class="hljs-string">'-'</span> + val, [<span class="hljs-string">'f'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">'r'</span>])
 <span class="hljs-comment">//=&gt; ['0-f', '1-o', '2-o', '3-b', '4-a', '5-r']</span></pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='function'>
-      Function
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>(Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)</p>
-
-    <div class='pre p1 fill-light mt0'>Function</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.6</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>err</span> <code class='quiet'>(<a href="#function">Function</a>)</code>
-	    Error handler
-
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>fns</span> <code class='quiet'>(...<a href="#function">Function</a>)</code>
-	    Functions to compose
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#function">Function</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning function</span>
-<span class="hljs-comment">//  promised :: a -&gt; Promise b</span>
-
-composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<span class="hljs-number">3</span>);</pre>
     
   
 
