@@ -736,8 +736,11 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
   
 
   <p>(Error -> *) -> ((y -> Promise z), (x -> Promise y), ..., (a -> Promise b)) -> (a -> Promise z)</p>
+<p>Performs rigth-to-left composition of one or more Promise-returning
+functions. The first argument may have any arity; the remaining
+arguments must be unary.</p>
 
-    <div class='pre p1 fill-light mt0'>Function</div>
+    <div class='pre p1 fill-light mt0'>new Function(fns: ...<a href="#function">Function</a>): <a href="#function">Function</a></div>
   
   
 
@@ -755,7 +758,7 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>fns</span> <code class='quiet'>(...<a href="#function">Function</a>)</code>
-	    The last argument may have any arity; the remaining arguments must be unary.
+	    Functions to compose
 
           </div>
           
@@ -770,7 +773,7 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#function">Function</a></code>:
-        Right-to-left composition of one or more Promise-returning functions. First argument is an error handler.
+        
 
       
     
