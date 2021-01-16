@@ -8,7 +8,7 @@ var { curry } = require('ramda');
  * arguments must be unary.
  * 
  * @since v0.0.6
- * @class Function
+ * @memberof Function
  * @param {...Function} fns Functions to compose
  * @return {Function}
  * @async
@@ -19,7 +19,6 @@ var { curry } = require('ramda');
  *
  * composeP(console.log, promised, promised)(3);
  */
-
 var composeP = (...fns) => curry((...args) => {
     return fns.slice(0, fns.length - 1).reduceRight(
         (promise, fn) => promise.then(
