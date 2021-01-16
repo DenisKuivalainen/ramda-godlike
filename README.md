@@ -28,7 +28,7 @@ RG.mapIndexed((val, id) => val + '-' + id, [3, 2, 1]);
 
 Documentation
 ----------
-You can find a description of how the functions work in the [documentation](https://deniskuivalainen.github.io/ramda-godlike/).
+You can find a description of how the functions work in the [documentation](https://deniskuivalainen.github.io/ramda-godlike/). 
 
 License
 ----------
