@@ -18,7 +18,7 @@ var { curry } = require('ramda');
  *
  * composeP(console.log, promised, promised)(3);
  */
-var pipeP = (...fns) => curry(async(...args) => {
+const pipeP = (...fns) => curry(async(...args) => {
     return fns.slice(1).reduce(
         (promise, fn) => promise.then(
             res => Promise.resolve(fn(res))
