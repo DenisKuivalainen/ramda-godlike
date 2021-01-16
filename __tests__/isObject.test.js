@@ -10,4 +10,7 @@ describe('test isObject', () => {
     test('isObject({}) //=> true', () => {
         expect(isObject({})).toBeTruthy();
     });
+    test('isObject([]) //=> false', () => {
+        expect(isObject([])).toBeTruthy();
+    });
 })

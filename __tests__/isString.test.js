@@ -10,4 +10,7 @@ describe('test isString', () => {
     test('isString({}) //=> false', () => {
         expect(isString({})).toBeFalsy();
     });
+    test('isString([]) //=> false', () => {
+        expect(isString([])).toBeFalsy();
+    });
 })

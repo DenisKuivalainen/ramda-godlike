@@ -9,7 +9,8 @@
         "test": "jest",
         "watch": "jest --watch",
         "coverage": "jest --coverage",
-        "build": "jsdoc ./src"
+        "doc": "documentation build src/** -f html -o docs --github",
+        "publish": "npm publish --access=public"
     },
     "keywords": [
         "godlike",

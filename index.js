@@ -4,6 +4,7 @@ exports.pipeP = require('./src/pipeP');
 
 // List
 exports.mapIndexed = require('./src/mapIndexed');
+exports.mapP = require('./src/mapP');
 
 // Logic
 
@@ -24,3 +25,4 @@ exports.trunc = require('./src/trunc');
 exports.isNumber = require('./src/isNumber');
 exports.isString = require('./src/isString');
 exports.isObject = require('./src/isObject');
+exports.isArray = require('./src/isArray');

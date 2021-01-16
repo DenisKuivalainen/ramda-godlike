@@ -1,7 +1,7 @@
 var { addIndex, map } = require('ramda');
 
 /**
- * Functor f => (a -> b -> c) -> f a -> f c
+ * Functor f => (a → b → c) → f a → f c
  * 
  * Takes a function and
  * a functor, applies the function to each of the functor's values, 
@@ -10,7 +10,7 @@ var { addIndex, map } = require('ramda');
  * More info at Ramda {@link https://github.com/ramda/ramda/blob/v0.27.0/source/map.js map} and {@link https://github.com/ramda/ramda/blob/v0.27.0/source/addIndex.js addIndex}.
  *
  * @since v0.0.6
- * @param {Function} fn The function to be called on every element of the input `list`.
+ * @param {Function} fn The function to be called on every element of the input 'list'.
  * @param {Array} list The list to be iterated over.
  * @return {Array} The new list.
  * @example

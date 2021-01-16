@@ -10,4 +10,7 @@ describe('test isNumber', () => {
     test('isNumber({}) //=> false', () => {
         expect(isNumber({})).toBeFalsy();
     });
+    test('isNumber([]) //=> false', () => {
+        expect(isNumber([])).toBeFalsy();
+    });
 })

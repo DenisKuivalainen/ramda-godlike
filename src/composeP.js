@@ -1,7 +1,7 @@
 var { curry } = require('ramda');
 
 /**
- * (Error → *) → ((y → Promise z), (x → Promise y), ..., (a → Promise b)) → (a → Promise z)
+ * ((y → Promise z), (x → Promise y), ..., (a → Promise b)) → (a → Promise z)
  * 
  * Performs rigth-to-left composition of one or more Promise-returning
  * functions. The first argument may have any arity; the remaining

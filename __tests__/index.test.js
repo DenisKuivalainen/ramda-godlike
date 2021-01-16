@@ -1,4 +1,3 @@
-// const { pow, mapIndexed, isNumber } = require('../index');
 const RG = require('../index');
 
 describe('test index', () => {
@@ -18,6 +17,9 @@ describe('test index', () => {
         expect(mockCallback.mock.results[0].value).toBe(0);
         expect(mockCallback.mock.results[1].value).toBe(2);
         expect(mockCallback.mock.results[2].value).toBe(2);
+    });
+    test('async increase value of elements in array', () => {
+        expect(RG.mapP((x) => Promise.resolve(x + 1), [1, 2, 3])).resolves.toEqual(expect.arrayContaining([2, 3, 4]));
     });
 
     // Logic
@@ -57,5 +59,8 @@ describe('test index', () => {
     });
     test('isObject({}) //=> true', () => {
         expect(RG.isObject({})).toBeTruthy();
+    });
+    test('isArray([]) //=> true', () => {
+        expect(RG.isArray([])).toBeTruthy();
     });
 })

@@ -1,5 +1,5 @@
 /**
- * Number -> Number
+ * Number → Number
  * 
  * Returns the absolute value of a number.
  *
