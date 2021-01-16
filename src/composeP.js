@@ -1,12 +1,16 @@
 var { curry } = require('ramda');
 
 /**
- * @name s composeP
+ * (Error -> *) -> ((y -> Promise z), (x -> Promise y), ..., (a -> Promise b)) -> (a -> Promise z)
+ * 
+ * Performs rigth-to-left composition of one or more Promise-returning
+ * functions. The first argument may have any arity; the remaining
+ * arguments must be unary.
+ * 
  * @since v0.0.6
- * @module Function
- * @description (Error -> *) -> ((y -> Promise z), (x -> Promise y), ..., (a -> Promise b)) -> (a -> Promise z)
- * @param {...Function} fns The last argument may have any arity; the remaining arguments must be unary.
- * @return {Function} Right-to-left composition of one or more Promise-returning functions. First argument is an error handler. 
+ * @class Function
+ * @param {...Function} fns Functions to compose
+ * @return {Function}
  * @async
  * @example
  *
