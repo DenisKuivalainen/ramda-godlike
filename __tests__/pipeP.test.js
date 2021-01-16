@@ -5,7 +5,6 @@ describe('test pipeP', () => {
 
     test('left-to-right function call', () => {
         expect(pipeP(
-            console.log,
             promised,
             (x) => x + '!',
             (x) => x + '?'

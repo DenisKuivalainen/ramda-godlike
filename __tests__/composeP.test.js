@@ -5,7 +5,6 @@ describe('test composeP', () => {
 
     test('right-to-left function call', () => {
         expect(composeP(
-            console.log,
             (x) => x + '!',
             (x) => x + '?',
             promised

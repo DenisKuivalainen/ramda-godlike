@@ -4,10 +4,10 @@ const RG = require('../index');
 describe('test index', () => {
     // Function
     test('pipeP', () => {
-        expect(RG.pipeP(console.log, (x) => Promise.resolve(x), (x) => x + '!', (x) => x + '?')('Success')).resolves.toBe('Success!?');
+        expect(RG.pipeP((x) => Promise.resolve(x), (x) => x + '!', (x) => x + '?')('Success')).resolves.toBe('Success!?');
     });
     test('composeP', () => {
-        expect(RG.composeP( console.log, (x) => x + '!', (x) => x + '?', (x) => Promise.resolve(x))('Success')).resolves.toBe('Success?!');
+        expect(RG.composeP((x) => x + '!', (x) => x + '?', (x) => Promise.resolve(x))('Success')).resolves.toBe('Success?!');
     });
 
     // List

@@ -754,17 +754,8 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>err</span> <code class='quiet'>(<a href="#function">Function</a>)</code>
-	    Error handler
-
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
             <span class='code bold'>fns</span> <code class='quiet'>(...<a href="#function">Function</a>)</code>
-	    Functions to compose
+	    The last argument may have any arity; the remaining arguments must be unary.
 
           </div>
           
@@ -779,7 +770,7 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#function">Function</a></code>:
-        
+        Right-to-left composition of one or more Promise-returning functions. First argument is an error handler.
 
       
     

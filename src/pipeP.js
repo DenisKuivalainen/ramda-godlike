@@ -21,13 +21,13 @@ var { curry } = require('ramda');
  * composeP(console.log, promised, promised)(3);
  */
 
-var pipeP = (err, ...fns) => curry(async (...args) => {
-    return await fns.slice(1).reduce(
+var pipeP = (...fns) => curry(async(...args) => {
+    return fns.slice(1).reduce(
         (promise, fn) => promise.then(
             res => Promise.resolve(fn(res))
         ),
         Promise.resolve(fns[0].apply(null, args))
-    ).catch(e => err.call(null, e));
+    );
 });
 
 module.exports = pipeP;
