@@ -8,7 +8,6 @@ var { curry } = require('ramda');
  * arguments must be unary.
  *
  * @since v0.0.6
- * @module Function
  * @param {...Function} fns Functions to compose
  * @return {Function}
  * @async

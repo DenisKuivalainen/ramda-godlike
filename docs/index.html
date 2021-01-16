@@ -109,16 +109,6 @@
               
                 
                 <li><a
-                  href='#function'
-                  class="">
-                  Function
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
                   href='#type'
                   class="">
                   Type
@@ -157,6 +147,16 @@
                 
                 </li>
               
+                
+                <li><a
+                  href='#pipep'
+                  class="">
+                  pipeP
+                  
+                </a>
+                
+                </li>
+              
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
@@ -176,6 +176,10 @@
       Math
     </h3>
     
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/abs.js#L16-L16'>
+      <span>src/abs.js</span>
+      </a>
     
   </div>
   
@@ -255,6 +259,10 @@ abs(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt;
     </h3>
     
     
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/ceil.js#L16-L16'>
+      <span>src/ceil.js</span>
+      </a>
+    
   </div>
   
 
@@ -333,6 +341,10 @@ ceil(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&gt
     </h3>
     
     
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/floor.js#L16-L16'>
+      <span>src/floor.js</span>
+      </a>
+    
   </div>
   
 
@@ -410,6 +422,10 @@ floor(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
       Math
     </h3>
     
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/pow.js#L19-L19'>
+      <span>src/pow.js</span>
+      </a>
     
   </div>
   
@@ -497,6 +513,10 @@ pow(<span class="hljs-number">5</span>)(<span class="hljs-number">2</span>) <spa
     </h3>
     
     
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/round.js#L16-L16'>
+      <span>src/round.js</span>
+      </a>
+    
   </div>
   
 
@@ -574,6 +594,10 @@ round(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
       Math
     </h3>
     
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/sign.js#L20-L20'>
+      <span>src/sign.js</span>
+      </a>
     
   </div>
   
@@ -654,6 +678,10 @@ sign(<span class="hljs-number">0</span>) <span class="hljs-comment">// =&gt; 0</
     </h3>
     
     
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/trunc.js#L16-L16'>
+      <span>src/trunc.js</span>
+      </a>
+    
   </div>
   
 
@@ -731,6 +759,10 @@ trunk(<span class="hljs-number">-45.95</span>) <span class="hljs-comment">// =&g
       Function
     </h3>
     
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/composeP.js#L22-L29'>
+      <span>src/composeP.js</span>
+      </a>
     
   </div>
   
@@ -811,94 +843,14 @@ composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<sp
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='function'>
-      Function
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>(Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)</p>
-<p>Performs left-to-right composition of one or more Promise-returning
-functions. First argument is an error handler. The first argument may have any arity; the remaining
-arguments must be unary.</p>
-
-    <div class='pre p1 fill-light mt0'>Function</div>
-  
-  
-
-  
-  
-  
-  
-  
-  <div>Since: v0.0.6</div>
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>fns</span> <code class='quiet'>(...<a href="#function">Function</a>)</code>
-	    Functions to compose
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#function">Function</a></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Example</div>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning function</span>
-<span class="hljs-comment">//  promised :: a -&gt; Promise b</span>
-
-composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<span class="hljs-number">3</span>);</pre>
-    
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
     <h3 class='fl m0' id='type'>
       Type
     </h3>
     
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/isNumber.js#L20-L20'>
+      <span>src/isNumber.js</span>
+      </a>
     
   </div>
   
@@ -989,6 +941,10 @@ isNumber({}) <span class="hljs-comment">//=&gt; false</span></pre>
     </h3>
     
     
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/isObject.js#L20-L20'>
+      <span>src/isObject.js</span>
+      </a>
+    
   </div>
   
 
@@ -1077,6 +1033,10 @@ isObject(<span class="hljs-number">5</span>) <span class="hljs-comment">//=&gt; 
       Type
     </h3>
     
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/isString.js#L20-L20'>
+      <span>src/isString.js</span>
+      </a>
     
   </div>
   
@@ -1167,6 +1127,10 @@ isString({}) <span class="hljs-comment">//=&gt; false</span></pre>
     </h3>
     
     
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/mapIndexed.js#L23-L23'>
+      <span>src/mapIndexed.js</span>
+      </a>
+    
   </div>
   
 
@@ -1232,6 +1196,94 @@ isString({}) <span class="hljs-comment">//=&gt; false</span></pre>
       
       <pre class='p1 overflow-auto round fill-light'>mapIndexed(<span class="hljs-function">(<span class="hljs-params">val, idx</span>) =&gt;</span> idx + <span class="hljs-string">'-'</span> + val, [<span class="hljs-string">'f'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'o'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">'r'</span>])
 <span class="hljs-comment">//=&gt; ['0-f', '1-o', '2-o', '3-b', '4-a', '5-r']</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pipep'>
+      pipeP
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/DenisKuivalainen/ramda-godlike/blob/a3dddc272094666847c60f2a7f0bb83efe4ca77f/src/pipeP.js#L21-L28'>
+      <span>src/pipeP.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>(Error -> *) -> ((a → Promise b), (b → Promise c), …, (y → Promise z)) -> (a -> Promise z)</p>
+<p>Performs left-to-right composition of one or more Promise-returning
+functions. First argument is an error handler. The first argument may have any arity; the remaining
+arguments must be unary.</p>
+
+    <div class='pre p1 fill-light mt0'>pipeP(fns: ...<a href="#function">Function</a>): <a href="#function">Function</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: v0.0.6</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fns</span> <code class='quiet'>(...<a href="#function">Function</a>)</code>
+	    Functions to compose
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#function">Function</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//  Some promise returning function</span>
+<span class="hljs-comment">//  promised :: a -&gt; Promise b</span>
+
+composeP(<span class="hljs-built_in">console</span>.log, promised, promised)(<span class="hljs-number">3</span>);</pre>
     
   
 
