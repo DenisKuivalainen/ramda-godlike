@@ -19,13 +19,13 @@ var { curry } = require('ramda');
  *
  * pipeP(promisedOne, promisedTwo); // => promisedOne(__).then(res => promiseTwo(res))
  */
-const pipeP = (...fns) => curry(async(...args) => {
+const pipeP = (...fns) =>async(...args) => {
     return fns.slice(1).reduce(
         (promise, fn) => promise.then(
             res => Promise.resolve(fn(res))
         ),
         Promise.resolve(fns[0].apply(null, args))
     );
-});
+};
 
 module.exports = pipeP;

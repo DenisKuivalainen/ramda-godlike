@@ -1,5 +1,3 @@
-var { curry } = require('ramda');
-
 /**
  * ((y → Promise z), (x → Promise y), ..., (a → Promise b)) → (a → Promise z)
  * 
@@ -19,13 +17,13 @@ var { curry } = require('ramda');
  *
  * composeP(promisedOne, promisedTwo); // => promisedTwo(__).then(res => promiseOne(res))
  */
-const composeP = (...fns) => curry((...args) => {
+const composeP = (...fns) => (...args) => {
     return fns.slice(0, fns.length - 1).reduceRight(
         (promise, fn) => promise.then(
             res => Promise.resolve(fn(res))
         ),
         Promise.resolve(fns[fns.length - 1].apply(null, args))
     );
-});
+};
 
 module.exports = composeP;

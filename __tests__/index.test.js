@@ -47,7 +47,12 @@ describe('test index', () => {
         expect(RG.trunc(-45.95)).toBe(-45);
     });
     // Object
-
+    test('viewOnPath(["x", 0, "y"], {x: [{y: 2, z: 3}, {y: 4, z: 5}]}) //=> 2', () => {
+        expect(RG.viewOnPath(['x', 0, 'y'], {x: [{y: 2, z: 3}, {y: 4, z: 5}]})).toBe(2);
+    });
+    test('viewOnPath(["x", 0, "y"], 9, {x: [{y: 2, z: 3}, {y: 4, z: 5}]}) //=> {x: [{y: 9, z: 3}, {y: 4, z: 5}]}', () => {
+        expect(RG.viewOnPath(['x', 0, 'y'], RG.setOnPath(['x', 0, 'y'], 9, {x: [{y: 2, z: 3}, {y: 4, z: 5}]}))).toBe(9);
+    });
     // Relation
 
     //Type
