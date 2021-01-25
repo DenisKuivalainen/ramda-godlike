@@ -16,6 +16,6 @@ var { is } = require('ramda');
  * isObject(5) //=> false
  * isObject([]) //=> true
  */
-const isObject = is(Object);
+const isObject = (x) => is(Object, x);
 
 module.exports = isObject;

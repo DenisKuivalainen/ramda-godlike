@@ -1,6 +1,6 @@
 {
     "name": "ramda-godlike",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Small personal library extending Ramda methods",
     "license": "MIT",
     "repository": "DenisKuivalainen/ramda-godlike",

@@ -16,6 +16,6 @@ var { is } = require('ramda');
  * isString({}) //=> false
  * isString([]) //=> false
  */
-const isString = is(String);
+const isString = (x) => is(String, x);
 
 module.exports = isString;

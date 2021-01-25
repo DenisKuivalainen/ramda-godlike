@@ -1,28 +1,35 @@
-// Function
-exports.composeP = require('./src/composeP');
-exports.pipeP = require('./src/pipeP');
+// // Function
+const composeP = require('./src/composeP');
+const pipeP = require('./src/pipeP');
 
-// List
-exports.mapIndexed = require('./src/mapIndexed');
-exports.mapP = require('./src/mapP');
+// // List
+const mapIndexed = require('./src/mapIndexed');
+const mapP = require('./src/mapP');
 
-// Logic
+// // Logic
 
-// Math
-exports.pow = require('./src/pow');
-exports.ceil = require('./src/ceil');
-exports.floor = require('./src/floor');
-exports.abs = require('./src/abs');
-exports.round = require('./src/round');
-exports.sign = require('./src/sign');
-exports.trunc = require('./src/trunc');
+// // Math
+const pow = require('./src/pow');
+const ceil = require('./src/ceil');
+const floor = require('./src/floor');
+const abs = require('./src/abs');
+const round = require('./src/round');
+const sign = require('./src/sign');
+const trunc = require('./src/trunc');
 
-// Object
+// // Object
 
-// Relation
+// // Relation
 
-//Type
-exports.isNumber = require('./src/isNumber');
-exports.isString = require('./src/isString');
-exports.isObject = require('./src/isObject');
-exports.isArray = require('./src/isArray');
+// //Type
+const isNumber = require('./src/isNumber');
+const isString = require('./src/isString');
+const isObject = require('./src/isObject');
+const isArray = require('./src/isArray');
+
+module.exports = {
+    composeP, pipeP,
+    mapIndexed, mapP,
+    pow, ceil, floor, abs, round, sign, trunc,
+    isNumber, isString, isObject, isArray
+}
